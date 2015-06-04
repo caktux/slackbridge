@@ -1,4 +1,4 @@
-FROM ubuntu:utopic
+FROM ubuntu:vivid
 
 ENV DEBIAN_FRONTEND noninteractive
 
