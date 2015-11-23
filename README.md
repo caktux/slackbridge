@@ -1,4 +1,4 @@
-Docker container for [discord-irc](https://github.com/billimek/discordbridge)
+Docker container for [discord-irc](https://github.com/reactiflux/discord-irc)
 ===
 
 ### Installation
