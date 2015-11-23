@@ -9,14 +9,16 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
 RUN apt-get install -y git curl wget vim supervisor
 
 # Install nodejs
-RUN curl -sL https://deb.nodesource.com/setup | bash -
+# RUN curl -sL https://deb.nodesource.com/setup | bash -
+RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash -
 RUN apt-get install --fix-missing -y nodejs
 
-# Get slack-irc
-RUN npm install -g slack-irc
+# Get discord-irc
+RUN npm install -g react@0.13.3
+RUN npm install -g discord-irc
 
 # Add configurations
-ADD config.json slack-irc/config.json
+ADD config.json discord-irc/config.json
 
 # Add supervisor configs
 ADD supervisord.conf supervisord.conf
