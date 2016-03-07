@@ -5,8 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 # Usual update / upgrade
 RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
 
-# Install our favorite vcs and other requirements
-RUN apt-get install -y git curl wget vim supervisor
+# Install requirements
+RUN apt-get install -y curl supervisor
 
 # Install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
