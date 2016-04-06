@@ -1,4 +1,4 @@
-FROM ubuntu:vivid
+FROM ubuntu:wily
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -6,11 +6,11 @@ ENV DEBIAN_FRONTEND noninteractive
 #RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
 RUN apt-get update && apt-get upgrade -y
 
-# Install our favorite vcs and other requirements
-RUN apt-get install -y git curl wget vim supervisor
+# Install requirements
+RUN apt-get install -y curl supervisor
 
 # Install nodejs
-RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash -
+RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
 RUN apt-get install --fix-missing -y nodejs
 
 # Get discord-irc
