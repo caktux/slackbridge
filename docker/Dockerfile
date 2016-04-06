@@ -15,7 +15,7 @@ RUN apt-get install --fix-missing -y nodejs
 
 # Get discord-irc
 #RUN npm install -g react@0.13.3
-RUN npm install -g discord-irc-billimek@0.4.4
+RUN npm install -g discord-irc-billimek
 #RUN npm install -g https://github.com/billimek/discord-irc
 #ADD discordirc-0.4.3.tgz /discordirc-0.4.3.tgz
 #RUN npm install -g /discordirc-0.4.3.tgz --verbose
