@@ -14,11 +14,7 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
 RUN apt-get install --fix-missing -y nodejs
 
 # Get discord-irc
-#RUN npm install -g react@0.13.3
 RUN npm install -g discord-irc-billimek
-#RUN npm install -g https://github.com/billimek/discord-irc
-#ADD discordirc-0.4.3.tgz /discordirc-0.4.3.tgz
-#RUN npm install -g /discordirc-0.4.3.tgz --verbose
 
 # Add configurations
 ADD config.json discord-irc/config.json
