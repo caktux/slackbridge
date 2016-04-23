@@ -1,9 +1,9 @@
-Docker container for [slack-irc](https://github.com/ekmartin/slack-irc)
+Docker container for [discord-irc](https://github.com/reactiflux/discord-irc)
 ===
 
 ### Installation
 ```
-git clone https://github.com/caktux/slackbridge
+git clone https://github.com/billimek/discordbridge
 ```
 
 ### Configuration
@@ -15,9 +15,9 @@ Copy `config.json.sample` to `config.json` and edit to your liking.
 Build the docker container and run it with:
 
 ```
-cd slackbridge/docker
-docker build -t slackbridge .
-docker run -d -t slackbridge
+cd discordbridge/docker
+docker build -t discordbridge .
+docker run -d -t discordbridge
 ```
 
 Enjoy :)
