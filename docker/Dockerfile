@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
 
 # Install requirements
-RUN apt-get install -y curl supervisor
+RUN apt-get install -y curl supervisor build-essential libicu-dev
 
 # Install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
